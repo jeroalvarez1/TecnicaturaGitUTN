@@ -1,32 +1,42 @@
-variable = 3
-print(variable)
-variable = "a"
-print(variable)
-variable = 3.5
-print(variable)
-x = 10
-y = 2
+
+
+Myvariable = 7
+print(Myvariable)
+Myvariable = "a"
+print(Myvariable)
+Myvariable = 6.2
+print(Myvariable)
+
+x = 19
+y = 45
 z = x + y
 print(id(x))
+
 # literales
 print(id(y))
 print(id(z))
 
-# Tipos int, float, String, Bool
+# Tipos DE DATOS
 a = True
 print(type(a))
-x = 10
+
+x = 123
 print(x)
 print(type(x))
-x = 14.5
+
+x = 56.2
 print(x)
 print(type(x))
-x = "Hola Alumnos"
+
+x = "Hola SOY JERO"
 print(x)
 print(type(x))
+
 x = True
 print(x)
 print(type(x))
+
+
 x = False
 print(x)
 print(type(x))
@@ -134,6 +144,7 @@ resultado = d <= b
 print(resultado)
 '''
 '''
+
 num = int(input("Ingrese un numero: "))
 if num % 2 == 0:
     print(f"El numero: {num} es par")
@@ -142,6 +153,7 @@ else:
 
 num = input
 '''
+
 '''
 # Operadores Lógicos
 a = True
@@ -149,15 +161,17 @@ b = True
 resultado = a and b
 print(resultado)
 
-# Operador or
+# Operador OR
 resultado = a or b
 print(resultado)
 
-# Operador not
+# Operador NOT
 resultado = not a
 print(resultado)
+
 '''
 '''
+
 num = int(input("Ingrese un número: "))
 
 if num >= 0 and num <= 5:
@@ -188,7 +202,7 @@ else:
     print("La edad está fuera de rango")
 '''
 '''
-edad = int(input("Ingrese su edad: "))
+edad = int(input("Digite su edad: "))
 veinte = edad >= 20 and edad < 30
 print(veinte)
 treinta = edad >= 30 and edad < 40
@@ -202,37 +216,39 @@ if veinte or treinta:
 else:
     print("La edad está fuera de rango")
 
-# Metodo simple
 
 if (20 <= edad < 30) or (30 <= edad < 40):
     print("Estas dentro del rango de los 20 a 30 años")
 else:
     print("No estás dentro del rango")
 '''
+
 '''
-# Ejercicio mayor de dos números
-num1 = int(input("Ingrese un numero entero para el valor 1: "))
-num2 = int(input("Ingrese un numero entero para el valor 2: "))
+# Mayor entre dos numeros
+
+num1 = int(input("Ingrese un numero : "))
+num2 = int(input("Ingrese otro numero: "))
 
 if num1 > num2:
-    print("El numero 1 es mayor")
+    print("Numero 1 es mayor")
 else:
-    print("El numero 2 es mayor")
+    print("Numero 2 es mayor")
 
-# Ejercicio: Tienda de libros
 
-print("Ingrese los siguientes datos del libro")
-nombreLibro = (input("Ingrese el nombre del libro: "))
-idLibro = int(input("Ingrese el id del libro: "))
-precioLibro = float(input("Ingrese el precio del libro: "))
-envíoGratuito = (input("Indicar si el envío es gratuito o no (True/False: "))
+
+# Tienda de libros
+
+nombreLibro = (input("Digite el nombre del libro: "))
+idLibro = int(input("Digite el id del libro: "))
+precioLibro = float(input("Digite el precio del libro: "))
+envíoGratuito = (input("Digite si el envío es gratuito: "))
 
 if envíoGratuito == "True":
     envíoGratuito = True
 elif envíoGratuito == "False":
     envíoGratuito = False
 else:
-    envíoGratuito = "El valor es incorrecto, debe escribir True/False"
+    envíoGratuito = "El valor es incorrecto"
 print(f'''
     Nombre: {nombreLibro}
     ID: {idLibro}
