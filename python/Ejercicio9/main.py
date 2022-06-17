@@ -7,8 +7,10 @@ def enterData():
     return array
 
 def repetir():
-    repetir = int(input("Desea ingresar otro alumno, precione '1' si lo desea o '0' en caso contrario: "))
-    return repetir
+    repetir = 1
+    while repetir == 1:
+        enterData()
+        repetir = int(input("Desea ingresar otro alumno, ingrese '1' si lo desea, o '0' en caso contrario: "))
 
 def calcularPromedio(arreglo):
     return np.mean(arreglo)
@@ -19,12 +21,8 @@ def valMin(arreglo):
 
 
 def operaciones():
-    #Entrar data
-    rep = 1
-    while rep == 1:
-        enterData()
-        rep = repetir()
-    #Se calucla el promedio
+    #operaciones
+    repetir()
     promedio = calcularPromedio(array)
     valueMin = valMin(array)
     return f"Las notas ingresadas son: {array}, el promedio de las notas es de: {promedio}, y el valor minimo es de: {valueMin} "
